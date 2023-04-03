@@ -1,0 +1,13 @@
+{
+  "name": "weekly-challenge-solutions",
+  "version": "1.0.0",
+  "description": "JavaScript solutions to the (Perl) Weekly Challenge by seav",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Eugene Alvin Villar",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^29.5.0"
+  }
+}
