@@ -9,7 +9,7 @@
 # numbers from 1 to 20?
 
 use utf8;
-use 5.36.0;
+use v5.36.0;
 
 # If the target number is much larger, I would construct a list of prime numbers
 # but since the target is small, I will hardcode the prime numbers less than 20
@@ -19,6 +19,10 @@ my $TARGET = 20;
 
 my @factorization = (0) x scalar @PRIMES;
 
+# This takes a number and returns an array representing the factorization of
+# the number in terms of the prime numbers in @PRIMES. Each element in the
+# returned array corresponds to the power of the prime number at the same
+# index in @PRIMES.
 sub factorize {
   my $n = shift;
   my @num_primes = (0) x scalar @PRIMES;

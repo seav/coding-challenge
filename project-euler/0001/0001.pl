@@ -8,7 +8,7 @@
 # Find the sum of all the multiples of 3 or 5 below 1000.
 
 use utf8;
-use 5.36.0;
+use v5.36.0;
 
 my $sum = 0;
 foreach my $num (1..999) {

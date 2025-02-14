@@ -7,7 +7,7 @@
 # What is the largest prime factor of the number 600,851,475,143?
 
 use utf8;
-use 5.36.0;
+use v5.36.0;
 
 use Math::Prime::Util qw(factor);
 
@@ -21,11 +21,11 @@ for my $i (2 .. sqrt($number)) {
     push @factors, $number / $i;
   }
 }
-@factors = sort {$a <=> $b} @factors;
+@factors = sort {$b <=> $a} @factors;  # Sort in descending order
 
 # Test each factor to see if it's prime
 my $largest_prime_factor;
-for my $i (reverse @factors) {
+for my $i (@factors) {
 
   my $is_prime = 1;
   my $j = 2;

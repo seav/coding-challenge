@@ -8,7 +8,7 @@
 # Find the largest palindrome made from the product of two 3-digit numbers.
 
 use utf8;
-use 5.36.0;
+use v5.36.0;
 
 my $largest = 0;
 for (my $i = 999; $i >= 100; $i--) {

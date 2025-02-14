@@ -11,7 +11,7 @@
 # greatest product. What is the value of this product?
 
 use utf8;
-use 5.36.0;
+use v5.36.0;
 
 use List::Util qw(product);
 

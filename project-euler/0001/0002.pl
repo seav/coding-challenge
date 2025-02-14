@@ -10,7 +10,7 @@
 # four million, find the sum of the even-valued terms.
 
 use utf8;
-use 5.36.0;
+use v5.36.0;
 
 my $sum = 0;
 my $fib1 = 1;

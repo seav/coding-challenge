@@ -15,14 +15,14 @@
 # natural numbers and the square of the sum.
 
 use utf8;
-use 5.36.0;
+use v5.36.0;
 
 use List::Util qw(sum);
 
 my $n = 100;
 
-my $sum_of_squares = sum (map { $_ ** 2 } (1 .. $n));
+my $sum_of_squares = sum(map { $_ ** 2 } 1 .. $n);
 
-my $square_of_sum = (sum 1 .. $n) ** 2;
+my $square_of_sum = (sum(1 .. $n)) ** 2;
 
 say $square_of_sum - $sum_of_squares;
